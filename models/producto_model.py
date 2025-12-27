@@ -1,0 +1,239 @@
+# -*- coding: utf-8 -*-
+"""
+Modelo para gestión de productos
+"""
+from core.base_model import BaseModel
+from core.response import Result
+
+
+class ProductoModel(BaseModel):
+    """Modelo para operaciones CRUD de productos"""
+
+    def __init__(self):
+        super().__init__()
+
+    def get_all_productos(self, include_inactive=False):
+        """
+        Obtiene todos los productos con información de categoría
+        """
+        query = """
+            SELECT 
+                p.id,
+                p.sku,
+                p.codigo_barras,
+                p.nombre,
+                p.categoria_id,
+                c.nombre as categoria_nombre,
+                p.precio_base,
+                p.stock_actual,
+                p.stock_minimo,
+                p.foto_path,
+                p.activo,
+                p.fecha_registro,
+                p.precio_compra,
+                p.proveedor_id
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+        """
+        
+        if not include_inactive:
+            query += " WHERE p.activo = 1"
+        
+        query += " ORDER BY p.nombre"
+        
+        return self.execute_query(query, fetch_all=True)
+
+    def get_producto_by_id(self, producto_id):
+        """Obtiene un producto por ID"""
+        query = """
+            SELECT 
+                p.id,
+                p.sku,
+                p.codigo_barras,
+                p.nombre,
+                p.categoria_id,
+                c.nombre as categoria_nombre,
+                p.precio_base,
+                p.stock_actual,
+                p.stock_minimo,
+                p.foto_path,
+                p.activo,
+                p.precio_compra,
+                p.proveedor_id
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+            WHERE p.id = ?
+        """
+        return self.execute_query(query, (producto_id,), fetch_one=True)
+
+    def get_producto_by_sku(self, sku):
+        """Obtiene un producto por SKU"""
+        query = """
+            SELECT 
+                p.id, p.sku, p.codigo_barras, p.nombre,
+                p.categoria_id, c.nombre as categoria_nombre,
+                p.precio_base, p.stock_actual, p.stock_minimo,
+                p.foto_path, p.activo
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+            WHERE p.sku = ?
+        """
+        return self.execute_query(query, (sku,), fetch_one=True)
+
+    def get_producto_by_barcode(self, codigo_barras):
+        """Obtiene un producto por código de barras"""
+        query = """
+            SELECT 
+                p.id, p.sku, p.codigo_barras, p.nombre,
+                p.categoria_id, c.nombre as categoria_nombre,
+                p.precio_base, p.stock_actual, p.stock_minimo,
+                p.foto_path, p.activo
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+            WHERE p.codigo_barras = ?
+        """
+        return self.execute_query(query, (codigo_barras,), fetch_one=True)
+
+    def search_productos(self, search_term):
+        """Busca productos por nombre, SKU o código de barras"""
+        query = """
+            SELECT 
+                p.id,
+                p.sku,
+                p.codigo_barras,
+                p.nombre,
+                p.categoria_id,
+                c.nombre as categoria_nombre,
+                p.precio_base,
+                p.stock_actual,
+                p.stock_minimo,
+                p.foto_path,
+                p.activo
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+            WHERE p.activo = 1
+            AND (
+                p.nombre LIKE ?
+                OR p.sku LIKE ?
+                OR p.codigo_barras LIKE ?
+            )
+            ORDER BY p.nombre
+        """
+        search_pattern = f"%{search_term}%"
+        return self.execute_query(query, (search_pattern, search_pattern, search_pattern), fetch_all=True)
+
+    def get_productos_bajo_stock(self):
+        """Obtiene productos con stock bajo"""
+        query = """
+            SELECT 
+                p.id, p.sku, p.nombre, p.stock_actual, p.stock_minimo,
+                c.nombre as categoria_nombre
+            FROM productos p
+            INNER JOIN categorias_producto c ON p.categoria_id = c.id
+            WHERE p.activo = 1
+            AND p.stock_actual <= p.stock_minimo
+            ORDER BY p.stock_actual ASC
+        """
+        return self.execute_query(query, fetch_all=True)
+
+    def create_producto(self, sku, nombre, categoria_id, precio_base, stock_inicial=0, 
+                       stock_minimo=0, codigo_barras=None, foto_path=None,
+                       precio_compra=0, proveedor_id=None):
+        """Crea un nuevo producto con campos extendidos"""
+        query = """
+            INSERT INTO productos (
+                sku, codigo_barras, nombre, categoria_id, precio_base,
+                stock_actual, stock_minimo, foto_path, activo,
+                precio_compra, proveedor_id
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?, ?)
+        """
+        
+        try:
+            producto_id = self.execute_query(
+                query,
+                (sku, codigo_barras, nombre, categoria_id, precio_base, 
+                 stock_inicial, stock_minimo, foto_path, precio_compra, proveedor_id),
+                commit=True
+            )
+            return Result.ok(
+                "Producto creado exitosamente",
+                {"producto_id": producto_id}
+            )
+        except Exception as e:
+            return Result.fail(f"Error al crear producto: {str(e)}")
+
+    def update_producto(self, producto_id, nombre, categoria_id, precio_base, 
+                       stock_minimo, codigo_barras=None, foto_path=None,
+                       precio_compra=0, proveedor_id=None):
+        """Actualiza un producto existente"""
+        query = """
+            UPDATE productos
+            SET nombre = ?,
+                categoria_id = ?,
+                precio_base = ?,
+                stock_minimo = ?,
+                codigo_barras = ?,
+                foto_path = ?,
+                precio_compra = ?,
+                proveedor_id = ?
+            WHERE id = ?
+        """
+        
+        try:
+            self.execute_query(
+                query,
+                (nombre, categoria_id, precio_base, stock_minimo,
+                 codigo_barras, foto_path, precio_compra, proveedor_id, producto_id), commit=True)
+            return Result.ok("Producto actualizado exitosamente")
+        except Exception as e:
+            return Result.fail(f"Error al actualizar producto: {str(e)}")
+
+    def update_stock(self, producto_id, nuevo_stock):
+        """Actualiza el stock de un producto"""
+        query = "UPDATE productos SET stock_actual = ? WHERE id = ?"
+        try:
+            self.execute_query(query, (nuevo_stock, producto_id), commit=True)
+            return Result.ok("Stock actualizado exitosamente")
+        except Exception as e:
+            return Result.fail(f"Error al actualizar stock: {str(e)}")
+
+    def toggle_active(self, producto_id):
+        """Activa/desactiva un producto"""
+        query = "UPDATE productos SET activo = NOT activo WHERE id = ?"
+        try:
+            self.execute_query(query, (producto_id,), commit=True)
+            return Result.ok("Producto eliminado exitosamente")
+        except Exception as e:
+            return Result.fail(f"Error al eliminar producto: {str(e)}")
+
+    def get_all_categorias(self, include_inactive=False):
+        """Obtiene todas las categorías de productos"""
+        query = "SELECT id, nombre, prefijo, activo FROM categorias_producto"
+        
+        if not include_inactive:
+            query += " WHERE activo = 1"
+        
+        query += " ORDER BY nombre"
+        
+        return self.execute_query(query, fetch_all=True)
+
+    def get_next_sku(self, categoria_id):
+        """Genera el siguiente SKU para una categoría"""
+        categoria = self.execute_query("SELECT prefijo FROM categorias_producto WHERE id = ?", (categoria_id,), fetch_one=True)
+        
+        if not categoria:
+            return None
+        
+        prefijo = categoria[0]
+        
+        query = """
+            SELECT MAX(CAST(SUBSTR(sku, LENGTH(?) + 2) AS INTEGER))
+            FROM productos
+            WHERE sku LIKE ?
+        """
+        
+        result = self.execute_query(query, (prefijo, f"{prefijo}-%"), fetch_one=True)
+        max_num = result[0] if result and result[0] else 0
+        
+        next_num = max_num + 1
+        return f"{prefijo}-{str(next_num).zfill(4)}"
