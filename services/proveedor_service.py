@@ -18,13 +18,13 @@ class ProveedorService:
             return self.model.update(
                 id_prov, data['empresa'], data.get('ruc'), data.get('contacto'),
                 data.get('telefono'), data.get('email'), data.get('direccion'),
-                data.get('categoria')
+                data.get('categoria'), data.get('activo', True)
             )
         else:
             return self.model.create(
                 data['empresa'], data.get('ruc'), data.get('contacto'),
                 data.get('telefono'), data.get('email'), data.get('direccion'),
-                data.get('categoria')
+                data.get('categoria'), data.get('activo', True)
             )
 
     def eliminar_proveedor(self, id_prov):

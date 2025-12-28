@@ -73,7 +73,7 @@ class HistorialVentasDialog(QDialog):
         layout.addWidget(btn_ext)
 
     def _create_card(self, title, color="#22c55e"):
-        """Crea tarjeta KPI mejorada"""
+        """Crea tarjeta KPI optimizada"""
         frame = QFrame()
         frame.setStyleSheet("""
             QFrame {
@@ -82,26 +82,26 @@ class HistorialVentasDialog(QDialog):
                 border: 2px solid #334155;
             }
         """)
-        frame.setMinimumHeight(120)
+        frame.setFixedHeight(90)  # ← REDUCIDO de 120 a 90
         
         l = QVBoxLayout(frame)
-        l.setSpacing(8)
-        l.setContentsMargins(20, 15, 20, 15)
+        l.setSpacing(5)
+        l.setContentsMargins(15, 12, 15, 12)
         
-        # Título
+        # Título (fuente más grande)
         t = QLabel(title)
-        t.setStyleSheet("color: #94a3b8; font-size: 13px; font-weight: normal;")
-        t.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        t.setStyleSheet("color: #94a3b8; font-size: 15px; font-weight: 600;")  # ← 15px (era 13px)
+        t.setAlignment(Qt.AlignmentFlag.AlignCenter)  # ← CENTRADO
         
-        # Valor
+        # Valor (centrado)
         v = QLabel("...")
         v.setStyleSheet(f"""
-            font-size: 32px;
+            font-size: 28px;
             font-weight: bold;
             color: {color};
-            padding: 5px 0;
+            padding: 3px 0;
         """)
-        v.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        v.setAlignment(Qt.AlignmentFlag.AlignCenter)  # ← CENTRADO
         
         l.addWidget(t)
         l.addWidget(v)
@@ -158,6 +158,7 @@ class HistorialVentasDialog(QDialog):
                 self._load_data()
 
     def _show_ticket(self):
+        """Muestra ticket con formato mejorado"""
         row = self.table.currentRow()
         if row < 0: return
         vid = int(self.table.item(row, 0).text())
@@ -165,15 +166,78 @@ class HistorialVentasDialog(QDialog):
         if not data: return
         
         v = data['venta']
-        txt = f"TICKET #{str(v[0]).zfill(8)}\nFECHA: {v[1]}\nCLIENTE: {v[4]}\n\n"
-        for d in data['detalle']:
-            txt += f"{d[4]} x {d[2]} = {d[7]:.2f}\n"
-        txt += f"\nTOTAL: S/ {v[5]:.2f}\nPAGO: {v[6].upper()}"
         
+        # Construir ticket con formato
+        ticket = []
+        ticket.append("═" * 50)
+        ticket.append("          GYMMANAGER PRO - TICKET DE VENTA")
+        ticket.append("═" * 50)
+        ticket.append("")
+        ticket.append(f"  Ticket Nº: #{str(v[0]).zfill(8)}")
+        ticket.append(f"  Fecha:     {v[1]}")
+        ticket.append(f"  Cliente:   {v[4] or 'Visitante'}")
+        ticket.append("")
+        ticket.append("─" * 50)
+        ticket.append("  DETALLE DE PRODUCTOS")
+        ticket.append("─" * 50)
+        ticket.append("")
+        
+        # Productos con formato tabla
+        # Estructura del detalle:
+        # 0: id, 1: producto_id, 2: nombre, 3: sku, 
+        # 4: cantidad, 5: precio_unitario, 6: descuento_porcentaje, 7: subtotal
+        total = 0
+        for d in data['detalle']:
+            nombre = str(d[2])[:30]  # d[2] = nombre del producto
+            cant = d[4]              # d[4] = cantidad
+            precio = d[5]            # d[5] = precio_unitario
+            subtotal = d[7]          # d[7] = subtotal
+            total += subtotal
+            
+            # Formato: "  Producto                      Cant  P.Unit  Subtotal"
+            linea = f"  {nombre:<30} {cant:>4} x {precio:>7.2f} = {subtotal:>8.2f}"
+            ticket.append(linea)
+        
+        ticket.append("")
+        ticket.append("─" * 50)
+        ticket.append(f"  TOTAL:                                    S/ {total:>8.2f}")
+        ticket.append("─" * 50)
+        ticket.append(f"  Método de Pago: {v[6].upper()}")
+        ticket.append("")
+        ticket.append("═" * 50)
+        ticket.append("          ¡Gracias por su compra!")
+        ticket.append("═" * 50)
+        
+        txt = "\n".join(ticket)
+        
+        # Diálogo con estilo
         dlg = QDialog(self)
-        dlg.setWindowTitle("Ticket")
-        t = QTextEdit(txt)
-        t.setFont(QFont("Courier New", 12))
-        l = QVBoxLayout(dlg)
-        l.addWidget(t)
+        dlg.setWindowTitle(f"Ticket #{str(v[0]).zfill(8)}")
+        dlg.setMinimumSize(600, 500)
+        dlg.setStyleSheet(self.styleSheet())
+        
+        layout = QVBoxLayout(dlg)
+        
+        # Área de texto con estilo monoespacio
+        text_edit = QTextEdit()
+        text_edit.setPlainText(txt)
+        text_edit.setReadOnly(True)
+        text_edit.setFont(QFont("Courier New", 11))
+        text_edit.setStyleSheet("""
+            QTextEdit {
+                background: #0f172a;
+                color: #e2e8f0;
+                border: 2px solid #334155;
+                border-radius: 6px;
+                padding: 15px;
+            }
+        """)
+        layout.addWidget(text_edit)
+        
+        # Botón cerrar
+        btn_close = QPushButton("Cerrar")
+        btn_close.setStyleSheet("padding: 8px 20px; font-weight: bold;")
+        btn_close.clicked.connect(dlg.accept)
+        layout.addWidget(btn_close)
+        
         dlg.exec()

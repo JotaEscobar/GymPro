@@ -57,11 +57,7 @@ class InventarioDialog(QDialog):
         btn_n.clicked.connect(lambda: self._open_form(None))
         h.addWidget(btn_n)
         
-        btn_xl = QPushButton("📤 Carga Masiva")
-        btn_xl.setStyleSheet("background-color: #f59e0b; color: black;")
-        btn_xl.clicked.connect(self._importar_excel)
-        h.addWidget(btn_xl)
-        
+
         btn_pv = QPushButton("🚚 Proveedores")
         btn_pv.setStyleSheet("background-color: #6366f1;")
         btn_pv.clicked.connect(self._open_proveedores)
@@ -83,9 +79,19 @@ class InventarioDialog(QDialog):
         
         # Tabla
         self.table = QTableWidget()
-        self.table.setColumnCount(8)
-        self.table.setHorizontalHeaderLabels(["Producto", "Categoría", "Costo", "Precio", "Stock", "Estado", "Proveedor", "Acciones"])
-        self.table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        self.table.setColumnCount(9)
+        self.table.setHorizontalHeaderLabels(["SKU", "Producto", "Categoría", "Costo", "Precio", "Stock", "Estado", "Proveedor", "Acciones"])
+        
+        # Ajustar anchos de columnas
+        self.table.setColumnWidth(0, 100)   # SKU - ancho fijo pequeño
+        self.table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)  # Producto - se expande
+        self.table.setColumnWidth(2, 120)   # Categoría
+        self.table.setColumnWidth(3, 90)    # Costo
+        self.table.setColumnWidth(4, 90)    # Precio
+        self.table.setColumnWidth(5, 70)    # Stock
+        self.table.setColumnWidth(6, 80)    # Estado
+        self.table.setColumnWidth(7, 150)   # Proveedor
+        # Columna 8 (Acciones) se ajusta automáticamente
         self.table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         self.table.doubleClicked.connect(self._on_table_click)
@@ -113,18 +119,21 @@ class InventarioDialog(QDialog):
         self.table.setRowCount(0)
         for r, p in enumerate(prods):
             self.table.insertRow(r)
-            self.table.setItem(r, 0, QTableWidgetItem(p[3]))
-            self.table.setItem(r, 1, QTableWidgetItem(p[5]))
+            # Columna 0: SKU
+            self.table.setItem(r, 0, QTableWidgetItem(str(p[1])))
+            # Columna 1: Nombre del producto
+            self.table.setItem(r, 1, QTableWidgetItem(p[3]))
+            self.table.setItem(r, 2, QTableWidgetItem(p[5]))
             costo = p[12] if len(p)>12 else 0
-            self.table.setItem(r, 2, QTableWidgetItem(f"S/ {costo:.2f}"))
-            self.table.setItem(r, 3, QTableWidgetItem(f"S/ {p[6]:.2f}"))
+            self.table.setItem(r, 3, QTableWidgetItem(f"S/ {costo:.2f}"))
+            self.table.setItem(r, 4, QTableWidgetItem(f"S/ {p[6]:.2f}"))
             
             st = QTableWidgetItem(str(p[7]))
             st.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             if p[7]<=0: st.setForeground(QColor("#ef4444"))
             elif p[7]<=p[8]: st.setForeground(QColor("#f59e0b"))
-            self.table.setItem(r, 4, st)
-            self.table.setItem(r, 5, QTableWidgetItem("Activo" if p[10] else "Inactivo"))
+            self.table.setItem(r, 5, st)
+            self.table.setItem(r, 6, QTableWidgetItem("Activo" if p[10] else "Inactivo"))
             
             # Columna Proveedor
             prov_id = p[13] if len(p) > 13 else None
@@ -138,7 +147,7 @@ class InventarioDialog(QDialog):
                             break
                 except:
                     pass
-            self.table.setItem(r, 6, QTableWidgetItem(prov_nombre))
+            self.table.setItem(r, 7, QTableWidgetItem(prov_nombre))
             
             # Botones Acciones
             w = QWidget()
@@ -155,7 +164,7 @@ class InventarioDialog(QDialog):
             
             wl.addWidget(btn_adj)
             wl.addWidget(btn_hist)
-            self.table.setCellWidget(r, 7, w)
+            self.table.setCellWidget(r, 8, w)
             
             self.table.item(r, 0).setData(Qt.ItemDataRole.UserRole, p)
 
@@ -352,12 +361,6 @@ class InventarioDialog(QDialog):
             t.setItem(r, 3, QTableWidgetItem(m[5]))
         dlg.exec()
 
-    def _importar_excel(self):
-        QMessageBox.information(self, "Info", "Columnas requeridas:\nNombre, Categoria, PrecioVenta, Stock, Minimo, Barras, PrecioCompra, Proveedor")
-        path, _ = QFileDialog.getOpenFileName(self, "Excel", "", "*.xlsx")
-        if path:
-            self.service.importar_productos_masivo(path)
-            self._load_data()
 
     def _open_proveedores(self):
         ProveedoresDialog(self).exec()

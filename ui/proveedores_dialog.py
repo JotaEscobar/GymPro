@@ -77,7 +77,12 @@ class ProveedoresDialog(QDialog):
             cat = row[7] or "General"
             categories.add(cat)
             self.table.setItem(r, 3, QTableWidgetItem(cat))
-            self.table.setItem(r, 4, QTableWidgetItem("Activo"))
+            estado = "Activo" if row[8] else "Inactivo"
+            estado_item = QTableWidgetItem(estado)
+            if not row[8]:  # Si está inactivo
+                from PyQt6.QtGui import QColor
+                estado_item.setForeground(QColor("#ef4444"))
+            self.table.setItem(r, 4, estado_item)
             self.table.item(r, 0).setData(Qt.ItemDataRole.UserRole, row)
             
         # Actualizar combo si es primera carga
@@ -109,7 +114,33 @@ class ProveedoresDialog(QDialog):
         from PyQt6.QtWidgets import QCheckBox
         chk_activo = QCheckBox("Proveedor Activo")
         chk_activo.setChecked(data[8] if data and len(data) > 8 else True)
-        chk_activo.setStyleSheet("color: white; font-weight: bold; padding: 5px;")
+        chk_activo.setStyleSheet("""
+            QCheckBox {
+                color: white;
+                font-weight: bold;
+                padding: 5px;
+                spacing: 8px;
+            }
+            QCheckBox::indicator {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #475569;
+                border-radius: 4px;
+                background-color: #1e293b;
+            }
+            QCheckBox::indicator:checked {
+                background-color: #22c55e;
+                border-color: #22c55e;
+                image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuMzMzMyA0TDYgMTEuMzMzM0wyLjY2NjY3IDgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+);
+            }
+            QCheckBox::indicator:unchecked {
+                background-color: #1e293b;
+                border-color: #475569;
+            }
+            QCheckBox::indicator:hover {
+                border-color: #64748b;
+            }
+        """)
         
         form.addRow("Empresa *:", inp_empresa)
         form.addRow("RUC:", inp_ruc)
