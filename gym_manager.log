@@ -671,3 +671,11 @@
 2025-12-24 22:25:48 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
 2025-12-24 22:25:48 - GymManager - INFO - Base de datos inicializada correctamente
 2025-12-24 22:25:49 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 19:06:06 - GymManager - INFO - ==================================================
+2025-12-27 19:06:06 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 19:06:06 - GymManager - INFO - ==================================================
+2025-12-27 19:06:06 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 19:06:06 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 19:06:06 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 19:06:06 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 19:07:18 - GymManager - INFO - Aplicación cerrada con código: 0
