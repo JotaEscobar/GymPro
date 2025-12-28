@@ -16,9 +16,12 @@ class VentaModel(BaseModel):
         """
         
         try:
+            # CORRECCIÓN: No pasar detalle_items como parámetro SQL
+            # Solo se pasan los valores individuales del registro de venta
             venta_id = self.execute_query(
                 venta_query,
                 (cliente_tipo, cliente_id, total, metodo_pago, usuario_id), 
+                fetch_all=False,  # ← CORRECCIÓN CRÍTICA: No usar fetch_all en INSERT
                 commit=(connection is None),
                 connection=connection
             )
@@ -39,6 +42,7 @@ class VentaModel(BaseModel):
                         (venta_id, item['producto_id'], item['cantidad'],
                          item['precio_unit'], item.get('descuento_porcentaje', 0),
                          item['subtotal']),
+                        fetch_all=False,  # ← CORRECCIÓN: No usar fetch_all en INSERT
                         commit=(connection is None),
                         connection=connection
                     )
