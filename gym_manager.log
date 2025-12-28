@@ -1,735 +1,102 @@
-2025-12-03 00:47:22 - GymManager - INFO - ==================================================
-2025-12-03 00:47:22 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 00:47:22 - GymManager - INFO - ==================================================
-2025-12-03 00:47:22 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 00:47:22 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 00:47:22 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 00:47:25 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 00:50:03 - GymManager - INFO - Plan actualizado: ID=2
-2025-12-03 00:50:03 - GymManager - INFO - Plan actualizado: ID=2
-2025-12-03 00:52:09 - GymManager - INFO - Plan creado: ID=3, Nombre=Combo Verano
-2025-12-03 00:52:09 - GymManager - INFO - Plan creado: Combo Verano
-2025-12-03 00:52:54 - GymManager - INFO - Código generado: P22GZ (intento 1)
-2025-12-03 00:52:54 - GymManager - INFO - Miembro registrado: ID=1, Código=P22GZ, Nombre=Paolo Guerrero Mi Capi
-2025-12-03 00:53:44 - GymManager - INFO - Código generado: J20FT (intento 1)
-2025-12-03 00:53:44 - GymManager - INFO - Miembro registrado: ID=2, Código=J20FT, Nombre=Jeffry La Foca Farfan
-2025-12-03 00:55:44 - GymManager - INFO - ==================================================
-2025-12-03 00:55:44 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 00:55:44 - GymManager - INFO - ==================================================
-2025-12-03 00:55:44 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 00:55:44 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 00:55:44 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 00:55:45 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:14:44 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-03 01:14:51 - GymManager - INFO - ==================================================
-2025-12-03 01:14:51 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:14:51 - GymManager - INFO - ==================================================
-2025-12-03 01:14:51 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:14:51 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:14:51 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:14:52 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:15:59 - GymManager - INFO - ==================================================
-2025-12-03 01:15:59 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:15:59 - GymManager - INFO - ==================================================
-2025-12-03 01:15:59 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:15:59 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:15:59 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:15:59 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:19:39 - GymManager - INFO - ==================================================
-2025-12-03 01:19:39 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:19:39 - GymManager - INFO - ==================================================
-2025-12-03 01:19:39 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:19:39 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:19:39 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:19:39 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:24:30 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-03 01:27:01 - GymManager - INFO - ==================================================
-2025-12-03 01:27:01 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:27:01 - GymManager - INFO - ==================================================
-2025-12-03 01:27:01 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:27:01 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:27:01 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:27:01 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:27:35 - GymManager - INFO - Pago registrado: ID=1, Miembro=2, Monto=5.0, Vence=2025-12-03
-2025-12-03 01:27:46 - GymManager - INFO - Pago ID=1 eliminado (extornado)
-2025-12-03 01:30:34 - GymManager - INFO - ==================================================
-2025-12-03 01:30:34 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:30:34 - GymManager - INFO - ==================================================
-2025-12-03 01:30:34 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:30:34 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:30:34 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:30:35 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:39:12 - GymManager - INFO - ==================================================
-2025-12-03 01:39:12 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 01:39:12 - GymManager - INFO - ==================================================
-2025-12-03 01:39:12 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 01:39:12 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 01:39:12 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 01:39:12 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 01:40:12 - GymManager - INFO - Pago registrado: ID=2, Miembro=2, Monto=100.0, Vence=2026-01-01
-2025-12-03 01:40:12 - GymManager - ERROR - Error al registrar combo: '>' not supported between instances of 'int' and 'str'
-2025-12-03 01:42:40 - GymManager - INFO - Pago registrado: ID=3, Miembro=1, Monto=100.0, Vence=2026-01-01
-2025-12-03 01:42:40 - GymManager - ERROR - Error al registrar combo: '>' not supported between instances of 'int' and 'str'
-2025-12-03 01:43:28 - GymManager - INFO - Asistencia registrada: Miembro=1, Fecha=2025-12-03 01:43:28
-2025-12-03 01:43:28 - GymManager - INFO - Asistencia registrada: Paolo Guerrero Mi Capi (p22gz)
-2025-12-03 01:43:48 - GymManager - INFO - Asistencia registrada: Miembro=2, Fecha=2025-12-03 01:43:48
-2025-12-03 01:43:48 - GymManager - INFO - Asistencia registrada: Jeffry La Foca Farfan (j20FT)
-2025-12-03 01:44:20 - GymManager - INFO - Plan actualizado: ID=1
-2025-12-03 01:44:20 - GymManager - INFO - Plan actualizado: ID=1
-2025-12-03 19:53:40 - GymManager - INFO - ==================================================
-2025-12-03 19:53:40 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 19:53:40 - GymManager - INFO - ==================================================
-2025-12-03 19:53:40 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 19:53:40 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 19:53:40 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 19:53:43 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 20:25:56 - GymManager - INFO - ==================================================
-2025-12-03 20:25:56 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 20:25:56 - GymManager - INFO - ==================================================
-2025-12-03 20:25:56 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 20:25:56 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 20:25:56 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 20:25:57 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 20:26:35 - GymManager - INFO - Código generado: L21AT (intento 1)
-2025-12-03 20:26:35 - GymManager - INFO - Miembro registrado: ID=3, Código=L21AT, Nombre=Lolo Chavo Morales
-2025-12-03 20:27:08 - GymManager - INFO - Código generado: I25WC (intento 1)
-2025-12-03 20:27:08 - GymManager - INFO - Miembro registrado: ID=4, Código=I25WC, Nombre=Ivan Pelao Palacios
-2025-12-03 20:27:51 - GymManager - INFO - Foto actualizada para miembro L21AT
-2025-12-03 20:29:09 - GymManager - INFO - Pago registrado: ID=4, Miembro=3, Monto=100.0, Vence=2026-01-01
-2025-12-03 20:29:09 - GymManager - ERROR - Error al registrar combo: '>' not supported between instances of 'int' and 'str'
-2025-12-03 20:30:00 - GymManager - WARNING - Acceso denegado: Ivan Pelao Palacios (i25wc) - Sin plan activo
-2025-12-03 20:30:09 - GymManager - INFO - Asistencia registrada: Miembro=3, Fecha=2025-12-03 20:30:09
-2025-12-03 20:30:09 - GymManager - INFO - Asistencia registrada: Lolo Chavo Morales (l21at)
-2025-12-03 20:30:57 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-03 20:36:31 - GymManager - INFO - ==================================================
-2025-12-03 20:36:31 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-03 20:36:31 - GymManager - INFO - ==================================================
-2025-12-03 20:36:31 - GymManager - INFO - Inicializando base de datos...
-2025-12-03 20:36:31 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-03 20:36:31 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-03 20:36:32 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-03 20:37:42 - GymManager - INFO - Plan creado: ID=4, Nombre=Mensualidad Prueba
-2025-12-03 20:37:42 - GymManager - INFO - Plan creado: Mensualidad Prueba
-2025-12-03 20:38:26 - GymManager - INFO - Código generado: P28KX (intento 1)
-2025-12-03 20:38:26 - GymManager - INFO - Miembro registrado: ID=5, Código=P28KX, Nombre=Pepe Piro Perez
-2025-12-03 20:38:40 - GymManager - INFO - Pago registrado: ID=5, Miembro=4, Monto=30.0, Vence=2025-12-30
-2025-12-03 20:39:28 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:39:28 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:40:07 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:40:07 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:40:21 - GymManager - INFO - Pago registrado: ID=6, Miembro=5, Monto=30.0, Vence=2025-12-30
-2025-12-03 20:40:51 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:40:51 - GymManager - INFO - Plan actualizado: ID=4
-2025-12-03 20:41:55 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-05 22:58:42 - GymManager - INFO - ==================================================
-2025-12-05 22:58:42 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-05 22:58:42 - GymManager - INFO - ==================================================
-2025-12-05 22:58:42 - GymManager - INFO - Inicializando base de datos...
-2025-12-05 22:58:42 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-05 22:58:42 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-05 22:58:43 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-05 23:00:00 - GymManager - INFO - Código generado: L366N (intento 1)
-2025-12-05 23:00:00 - GymManager - INFO - Miembro registrado: ID=6, Código=L366N, Nombre=Lola Lala Lila Leon
-2025-12-05 23:00:55 - GymManager - INFO - Código generado: M852J (intento 1)
-2025-12-05 23:00:55 - GymManager - INFO - Miembro registrado: ID=7, Código=M852J, Nombre=Maria Morales Bacilio
-2025-12-05 23:15:20 - GymManager - INFO - Pago registrado: ID=7, Miembro=6, Monto=100.0, Vence=2026-01-03
-2025-12-05 23:15:20 - GymManager - ERROR - Error al registrar combo: '>' not supported between instances of 'int' and 'str'
-2025-12-08 16:17:15 - GymManager - INFO - ==================================================
-2025-12-08 16:17:15 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-08 16:17:15 - GymManager - INFO - ==================================================
-2025-12-08 16:17:15 - GymManager - INFO - Inicializando base de datos...
-2025-12-08 16:17:15 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-08 16:17:15 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-08 16:17:16 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-08 16:18:40 - GymManager - INFO - Código generado: A66I7 (intento 1)
-2025-12-08 16:18:40 - GymManager - INFO - Miembro registrado: ID=8, Código=A66I7, Nombre=Arturo Morale Peña
-2025-12-08 16:19:30 - GymManager - INFO - Código generado: M66NC (intento 1)
-2025-12-08 16:19:30 - GymManager - INFO - Miembro registrado: ID=9, Código=M66NC, Nombre=Melissa Paredes Bandida
-2025-12-08 16:21:08 - GymManager - INFO - Pago registrado: ID=8, Miembro=7, Monto=100.0, Vence=2026-01-06
-2025-12-08 16:21:08 - GymManager - ERROR - Error al registrar combo: '>' not supported between instances of 'int' and 'str'
-2025-12-09 14:24:53 - GymManager - INFO - ==================================================
-2025-12-09 14:24:53 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 14:24:53 - GymManager - INFO - ==================================================
-2025-12-09 14:24:53 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 14:24:53 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 14:24:53 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 14:24:56 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 14:25:35 - GymManager - INFO - Pago registrado: ID=9, Miembro=9, Monto=100.0, Vence=2026-01-07
-2025-12-09 14:25:35 - GymManager - INFO - Monto prorrateado: S/ 100.00 / 2 = S/ 50.00 por persona
-2025-12-09 14:25:35 - GymManager - ERROR - Error al registrar combo: 'MemberModel' object has no attribute 'find_member_by_id'
-2025-12-09 14:36:03 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 14:36:19 - GymManager - INFO - ==================================================
-2025-12-09 14:36:19 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 14:36:19 - GymManager - INFO - ==================================================
-2025-12-09 14:36:19 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 14:36:19 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 14:36:19 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 14:36:20 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 14:36:39 - GymManager - INFO - Pago ID=5 eliminado (extornado)
-2025-12-09 14:37:21 - GymManager - INFO - Pago registrado: ID=10, Miembro=4, Monto=100.0, Vence=2026-01-07
-2025-12-09 14:37:21 - GymManager - INFO - Monto prorrateado: S/ 100.00 / 2 = S/ 50.00 por persona
-2025-12-09 14:37:21 - GymManager - INFO - Pago registrado: ID=11, Miembro=8, Monto=50.0, Vence=2026-01-07
-2025-12-09 14:37:21 - GymManager - INFO - Pago creado para Arturo Morale Peña (ID 8): payment_id=11, monto=S/ 50.00
-2025-12-09 14:37:21 - GymManager - INFO - Combo registrado exitosamente: Payment 10, 2 personas, S/ 50.00 c/u (Total: S/ 100.00)
-2025-12-09 14:37:47 - GymManager - INFO - Asistencia registrada: Miembro=8, Fecha=2025-12-09 14:37:47
-2025-12-09 14:37:47 - GymManager - INFO - Asistencia registrada: Arturo Morale Peña (a66i7)
-2025-12-09 14:52:48 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 14:52:57 - GymManager - INFO - ==================================================
-2025-12-09 14:52:57 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 14:52:57 - GymManager - INFO - ==================================================
-2025-12-09 14:52:57 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 14:52:57 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 14:52:57 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 14:52:59 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 15:02:22 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 15:02:32 - GymManager - INFO - ==================================================
-2025-12-09 15:02:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 15:02:32 - GymManager - INFO - ==================================================
-2025-12-09 15:02:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 15:02:32 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 15:02:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 15:02:33 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 15:05:06 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 15:43:15 - GymManager - INFO - ==================================================
-2025-12-09 15:43:15 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 15:43:15 - GymManager - INFO - ==================================================
-2025-12-09 15:43:15 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 15:43:15 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 15:43:15 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 15:43:15 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 15:44:22 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 18:34:04 - GymManager - INFO - ==================================================
-2025-12-09 18:34:04 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 18:34:04 - GymManager - INFO - ==================================================
-2025-12-09 18:34:04 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 18:34:04 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 18:34:04 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 18:34:04 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 18:34:21 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 18:37:24 - GymManager - INFO - ==================================================
-2025-12-09 18:37:24 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 18:37:24 - GymManager - INFO - ==================================================
-2025-12-09 18:37:24 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 18:37:24 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 18:37:24 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 18:37:25 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 18:37:46 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 18:44:32 - GymManager - INFO - ==================================================
-2025-12-09 18:44:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 18:44:32 - GymManager - INFO - ==================================================
-2025-12-09 18:44:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 18:44:32 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 18:44:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 18:44:35 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 18:44:51 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 20:03:28 - GymManager - INFO - ==================================================
-2025-12-09 20:03:28 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 20:03:28 - GymManager - INFO - ==================================================
-2025-12-09 20:03:28 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 20:03:28 - GymManager - INFO - ✅ Base de datos inicializada: 15 tablas + 14 índices + datos iniciales
-2025-12-09 20:03:28 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 20:03:28 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 20:16:08 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 20:18:29 - GymManager - INFO - ==================================================
-2025-12-09 20:18:29 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 20:18:29 - GymManager - INFO - ==================================================
-2025-12-09 20:18:29 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 20:18:29 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales (FASE 1 + FASE 2)
-2025-12-09 20:18:29 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 20:18:30 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 20:19:56 - GymManager - INFO - Código generado: D2584 (intento 1)
-2025-12-09 20:19:56 - GymManager - INFO - Miembro registrado: ID=10, Código=D2584, Nombre=Diana Lucero Alvarado Perez
-2025-12-09 20:20:04 - GymManager - INFO - Pago registrado: ID=12, Miembro=10, Monto=5.0, Vence=2025-12-09
-2025-12-09 20:20:10 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 20:21:45 - GymManager - INFO - ==================================================
-2025-12-09 20:21:45 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 20:21:45 - GymManager - INFO - ==================================================
-2025-12-09 20:21:45 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 20:21:45 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales (FASE 1 + FASE 2)
-2025-12-09 20:21:45 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 20:21:46 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 20:22:25 - GymManager - INFO - Asistencia registrada: Miembro=2, Fecha=2025-12-09 20:22:25
-2025-12-09 20:22:25 - GymManager - INFO - Asistencia registrada: Jeffry La Foca Farfan (j20ft)
-2025-12-09 20:22:52 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 23:11:42 - GymManager - INFO - ==================================================
-2025-12-09 23:11:42 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:11:42 - GymManager - INFO - ==================================================
-2025-12-09 23:11:42 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:11:42 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales (FASE 1 + FASE 2)
-2025-12-09 23:11:42 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:11:46 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 23:12:01 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 23:12:53 - GymManager - INFO - ==================================================
-2025-12-09 23:12:53 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:12:53 - GymManager - INFO - ==================================================
-2025-12-09 23:12:53 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:12:53 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales (FASE 1 + FASE 2)
-2025-12-09 23:12:53 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:12:53 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 23:16:11 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-09 23:18:38 - GymManager - INFO - ==================================================
-2025-12-09 23:18:38 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:18:38 - GymManager - INFO - ==================================================
-2025-12-09 23:18:38 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:18:38 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales (FASE 1 + FASE 2)
-2025-12-09 23:18:38 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:49:41 - GymManager - INFO - ==================================================
-2025-12-09 23:49:41 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:49:41 - GymManager - INFO - ==================================================
-2025-12-09 23:49:41 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:49:41 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-09 23:49:41 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:58:08 - GymManager - INFO - ==================================================
-2025-12-09 23:58:08 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:58:08 - GymManager - INFO - ==================================================
-2025-12-09 23:58:08 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:58:08 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-09 23:58:08 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:58:09 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-09 23:59:49 - GymManager - INFO - ==================================================
-2025-12-09 23:59:49 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-09 23:59:49 - GymManager - INFO - ==================================================
-2025-12-09 23:59:49 - GymManager - INFO - Inicializando base de datos...
-2025-12-09 23:59:49 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-09 23:59:49 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-09 23:59:49 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:01:38 - GymManager - INFO - ==================================================
-2025-12-10 00:01:38 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:01:38 - GymManager - INFO - ==================================================
-2025-12-10 00:01:38 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:01:38 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:01:38 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:01:39 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:03:32 - GymManager - INFO - ==================================================
-2025-12-10 00:03:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:03:32 - GymManager - INFO - ==================================================
-2025-12-10 00:03:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:03:32 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:03:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:03:33 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:04:08 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-10 00:07:10 - GymManager - INFO - ==================================================
-2025-12-10 00:07:10 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:07:10 - GymManager - INFO - ==================================================
-2025-12-10 00:07:10 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:07:10 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:07:10 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:07:10 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:07:22 - GymManager - INFO - ==================================================
-2025-12-10 00:07:22 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:07:22 - GymManager - INFO - ==================================================
-2025-12-10 00:07:22 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:07:22 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:07:22 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:07:22 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:08:37 - GymManager - INFO - ==================================================
-2025-12-10 00:08:37 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:08:37 - GymManager - INFO - ==================================================
-2025-12-10 00:08:37 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:08:37 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:08:37 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:08:38 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:09:57 - GymManager - INFO - ==================================================
-2025-12-10 00:09:57 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:09:57 - GymManager - INFO - ==================================================
-2025-12-10 00:09:57 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:09:57 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:09:57 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:09:58 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:17:49 - GymManager - INFO - ==================================================
-2025-12-10 00:17:49 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:17:49 - GymManager - INFO - ==================================================
-2025-12-10 00:17:49 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:17:49 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:17:49 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:17:50 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:18:52 - GymManager - INFO - ==================================================
-2025-12-10 00:18:52 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:18:52 - GymManager - INFO - ==================================================
-2025-12-10 00:18:52 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:18:52 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:18:52 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:18:53 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 00:19:32 - GymManager - INFO - ==================================================
-2025-12-10 00:19:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:19:32 - GymManager - INFO - ==================================================
-2025-12-10 00:19:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:19:32 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:19:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 00:19:40 - GymManager - INFO - ==================================================
-2025-12-10 00:19:40 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 00:19:40 - GymManager - INFO - ==================================================
-2025-12-10 00:19:40 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 00:19:40 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 00:19:40 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 21:24:10 - GymManager - INFO - ==================================================
-2025-12-10 21:24:10 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 21:24:10 - GymManager - INFO - ==================================================
-2025-12-10 21:24:10 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 21:24:10 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 21:24:10 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:31:21 - GymManager - INFO - ==================================================
-2025-12-10 22:31:21 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:31:21 - GymManager - INFO - ==================================================
-2025-12-10 22:31:21 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:31:21 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:31:21 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:31:22 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 22:37:50 - GymManager - INFO - ==================================================
-2025-12-10 22:37:50 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:37:50 - GymManager - INFO - ==================================================
-2025-12-10 22:37:50 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:37:50 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:37:50 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:37:51 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 22:41:23 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-10 22:41:34 - GymManager - INFO - ==================================================
-2025-12-10 22:41:34 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:41:34 - GymManager - INFO - ==================================================
-2025-12-10 22:41:34 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:41:34 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:41:34 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:41:35 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 22:54:57 - GymManager - INFO - ==================================================
-2025-12-10 22:54:57 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:54:57 - GymManager - INFO - ==================================================
-2025-12-10 22:54:57 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:54:57 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:54:57 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:54:58 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 22:57:21 - GymManager - INFO - ==================================================
-2025-12-10 22:57:21 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:57:21 - GymManager - INFO - ==================================================
-2025-12-10 22:57:21 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:57:21 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:57:21 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:57:21 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 22:59:32 - GymManager - INFO - ==================================================
-2025-12-10 22:59:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 22:59:32 - GymManager - INFO - ==================================================
-2025-12-10 22:59:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 22:59:32 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 22:59:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 22:59:32 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 23:06:50 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-10 23:06:54 - GymManager - INFO - ==================================================
-2025-12-10 23:06:54 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 23:06:54 - GymManager - INFO - ==================================================
-2025-12-10 23:06:54 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 23:06:54 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 23:06:54 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 23:06:55 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-10 23:07:24 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-10 23:07:28 - GymManager - INFO - ==================================================
-2025-12-10 23:07:28 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-10 23:07:28 - GymManager - INFO - ==================================================
-2025-12-10 23:07:28 - GymManager - INFO - Inicializando base de datos...
-2025-12-10 23:07:28 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-10 23:07:28 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-10 23:07:29 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 00:21:56 - GymManager - ERROR - Error en transacción BD: no such column: benefit_codigo
-2025-12-11 00:21:56 - GymManager - ERROR - Error al eliminar tipo de beneficio: no such column: benefit_codigo
-2025-12-11 00:22:02 - GymManager - ERROR - Error en transacción BD: no such column: benefit_codigo
-2025-12-11 00:22:02 - GymManager - ERROR - Error al eliminar tipo de beneficio: no such column: benefit_codigo
-2025-12-11 00:23:20 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-11 22:04:41 - GymManager - INFO - ==================================================
-2025-12-11 22:04:41 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-11 22:04:41 - GymManager - INFO - ==================================================
-2025-12-11 22:04:41 - GymManager - INFO - Inicializando base de datos...
-2025-12-11 22:04:41 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-11 22:04:41 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-11 22:04:44 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 22:14:06 - GymManager - INFO - ==================================================
-2025-12-11 22:14:06 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-11 22:14:06 - GymManager - INFO - ==================================================
-2025-12-11 22:14:07 - GymManager - INFO - Inicializando base de datos...
-2025-12-11 22:14:07 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-11 22:14:07 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-11 22:14:10 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 22:16:13 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-11 22:16:18 - GymManager - INFO - ==================================================
-2025-12-11 22:16:18 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-11 22:16:18 - GymManager - INFO - ==================================================
-2025-12-11 22:16:18 - GymManager - INFO - Inicializando base de datos...
-2025-12-11 22:16:18 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-11 22:16:18 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-11 22:16:22 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 22:22:54 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-11 22:22:56 - GymManager - INFO - ==================================================
-2025-12-11 22:22:56 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-11 22:22:56 - GymManager - INFO - ==================================================
-2025-12-11 22:22:56 - GymManager - INFO - Inicializando base de datos...
-2025-12-11 22:22:56 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-11 22:22:56 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-11 22:22:56 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 22:26:19 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-11 22:26:21 - GymManager - INFO - ==================================================
-2025-12-11 22:26:21 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-11 22:26:21 - GymManager - INFO - ==================================================
-2025-12-11 22:26:21 - GymManager - INFO - Inicializando base de datos...
-2025-12-11 22:26:21 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-11 22:26:21 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-11 22:26:22 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-11 22:29:00 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-13 20:44:42 - GymManager - INFO - ==================================================
-2025-12-13 20:44:42 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 20:44:42 - GymManager - INFO - ==================================================
-2025-12-13 20:44:42 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 20:44:42 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 20:44:42 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 20:44:43 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 21:11:12 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-13 21:11:23 - GymManager - INFO - ==================================================
-2025-12-13 21:11:23 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 21:11:23 - GymManager - INFO - ==================================================
-2025-12-13 21:11:23 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 21:11:23 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 21:11:23 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 21:11:23 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 21:35:44 - GymManager - INFO - ==================================================
-2025-12-13 21:35:44 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 21:35:44 - GymManager - INFO - ==================================================
-2025-12-13 21:35:44 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 21:35:44 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 21:35:44 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 21:35:45 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 21:41:24 - GymManager - INFO - ==================================================
-2025-12-13 21:41:24 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 21:41:24 - GymManager - INFO - ==================================================
-2025-12-13 21:41:24 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 21:41:24 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 21:41:24 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 21:41:25 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 21:43:41 - GymManager - INFO - ==================================================
-2025-12-13 21:43:41 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 21:43:41 - GymManager - INFO - ==================================================
-2025-12-13 21:43:41 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 21:43:41 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 21:43:41 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 21:43:41 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 22:05:54 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-13 23:28:27 - GymManager - INFO - ==================================================
-2025-12-13 23:28:27 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 23:28:27 - GymManager - INFO - ==================================================
-2025-12-13 23:28:27 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 23:28:27 - GymManager - INFO - Migración: Columna proveedor_id agregada a productos
-2025-12-13 23:28:27 - GymManager - INFO - Migración: Columna precio_compra agregada a productos
-2025-12-13 23:28:27 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 23:28:27 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 23:28:29 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-13 23:37:34 - GymManager - INFO - ==================================================
-2025-12-13 23:37:34 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-13 23:37:34 - GymManager - INFO - ==================================================
-2025-12-13 23:37:34 - GymManager - INFO - Inicializando base de datos...
-2025-12-13 23:37:34 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-13 23:37:34 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-13 23:37:35 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 00:23:10 - GymManager - INFO - ==================================================
-2025-12-14 00:23:10 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 00:23:10 - GymManager - INFO - ==================================================
-2025-12-14 00:23:10 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 00:23:10 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 00:23:10 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 00:23:10 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:05:20 - GymManager - INFO - ==================================================
-2025-12-14 01:05:20 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:05:20 - GymManager - INFO - ==================================================
-2025-12-14 01:05:20 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:05:20 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:05:20 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:05:21 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:30:23 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 01:30:26 - GymManager - INFO - ==================================================
-2025-12-14 01:30:26 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:30:26 - GymManager - INFO - ==================================================
-2025-12-14 01:30:26 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:30:26 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:30:26 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:30:27 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:33:01 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 01:33:08 - GymManager - INFO - ==================================================
-2025-12-14 01:33:08 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:33:08 - GymManager - INFO - ==================================================
-2025-12-14 01:33:08 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:33:08 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:33:08 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:33:09 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:37:26 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 01:37:32 - GymManager - INFO - ==================================================
-2025-12-14 01:37:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:37:32 - GymManager - INFO - ==================================================
-2025-12-14 01:37:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:37:32 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:37:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:37:33 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:47:13 - GymManager - INFO - ==================================================
-2025-12-14 01:47:13 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:47:13 - GymManager - INFO - ==================================================
-2025-12-14 01:47:13 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:47:13 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:47:13 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:47:13 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:51:24 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 01:51:38 - GymManager - INFO - ==================================================
-2025-12-14 01:51:38 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 01:51:38 - GymManager - INFO - ==================================================
-2025-12-14 01:51:38 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 01:51:38 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 01:51:38 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 01:51:38 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 01:51:53 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 13:30:09 - GymManager - INFO - ==================================================
-2025-12-14 13:30:09 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 13:30:09 - GymManager - INFO - ==================================================
-2025-12-14 13:30:09 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 13:30:09 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 13:30:09 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 13:30:13 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 13:31:36 - GymManager - INFO - Foto actualizada para miembro J20FT
-2025-12-14 13:32:20 - GymManager - INFO - Asistencia registrada: Miembro=2, Fecha=2025-12-14 13:32:20
-2025-12-14 13:32:20 - GymManager - INFO - Asistencia registrada: Jeffry La Foca Farfan (J20FT)
-2025-12-14 13:32:39 - GymManager - INFO - Nota agregada: ID=1, Miembro=2
-2025-12-14 13:32:59 - GymManager - INFO - Asistencia registrada: Miembro=6, Fecha=2025-12-14 13:32:59
-2025-12-14 13:32:59 - GymManager - INFO - Asistencia registrada: Lola Lala Lila Leon (l366n)
-2025-12-14 13:36:43 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 22:49:32 - GymManager - INFO - ==================================================
-2025-12-14 22:49:32 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 22:49:32 - GymManager - INFO - ==================================================
-2025-12-14 22:49:32 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 22:49:32 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 22:49:32 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 22:49:33 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 22:56:24 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 22:56:39 - GymManager - INFO - ==================================================
-2025-12-14 22:56:39 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 22:56:39 - GymManager - INFO - ==================================================
-2025-12-14 22:56:39 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 22:56:39 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 22:56:39 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 22:56:42 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 23:39:01 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-14 23:43:21 - GymManager - INFO - ==================================================
-2025-12-14 23:43:21 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 23:43:21 - GymManager - INFO - ==================================================
-2025-12-14 23:43:21 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 23:43:21 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 23:43:21 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 23:43:34 - GymManager - INFO - ==================================================
-2025-12-14 23:43:34 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 23:43:34 - GymManager - INFO - ==================================================
-2025-12-14 23:43:34 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 23:43:34 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 23:43:34 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 23:44:46 - GymManager - INFO - ==================================================
-2025-12-14 23:44:46 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 23:44:46 - GymManager - INFO - ==================================================
-2025-12-14 23:44:46 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 23:44:46 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 23:44:46 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 23:44:47 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 23:46:27 - GymManager - INFO - ==================================================
-2025-12-14 23:46:27 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 23:46:27 - GymManager - INFO - ==================================================
-2025-12-14 23:46:27 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 23:46:27 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 23:46:27 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 23:46:27 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-14 23:51:09 - GymManager - INFO - ==================================================
-2025-12-14 23:51:09 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-14 23:51:09 - GymManager - INFO - ==================================================
-2025-12-14 23:51:09 - GymManager - INFO - Inicializando base de datos...
-2025-12-14 23:51:09 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-14 23:51:09 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-14 23:51:10 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-15 00:05:55 - GymManager - INFO - ==================================================
-2025-12-15 00:05:55 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-15 00:05:55 - GymManager - INFO - ==================================================
-2025-12-15 00:05:55 - GymManager - INFO - Inicializando base de datos...
-2025-12-15 00:05:55 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-15 00:05:55 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-15 00:05:56 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-15 00:11:15 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-15 00:13:49 - GymManager - INFO - ==================================================
-2025-12-15 00:13:49 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-15 00:13:49 - GymManager - INFO - ==================================================
-2025-12-15 00:13:49 - GymManager - INFO - Inicializando base de datos...
-2025-12-15 00:13:49 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-15 00:13:49 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-15 00:13:50 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-15 00:17:48 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-15 21:31:42 - GymManager - INFO - ==================================================
-2025-12-15 21:31:42 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-15 21:31:42 - GymManager - INFO - ==================================================
-2025-12-15 21:31:42 - GymManager - INFO - Inicializando base de datos...
-2025-12-15 21:31:42 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-15 21:31:42 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-15 21:31:43 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-24 22:25:48 - GymManager - INFO - ==================================================
-2025-12-24 22:25:48 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-24 22:25:48 - GymManager - INFO - ==================================================
-2025-12-24 22:25:48 - GymManager - INFO - Inicializando base de datos...
-2025-12-24 22:25:48 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-24 22:25:48 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-24 22:25:49 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:06:06 - GymManager - INFO - ==================================================
-2025-12-27 19:06:06 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:06:06 - GymManager - INFO - ==================================================
-2025-12-27 19:06:06 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:06:06 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:06:06 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:06:06 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:07:18 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 19:15:37 - GymManager - INFO - ==================================================
-2025-12-27 19:15:37 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:15:37 - GymManager - INFO - ==================================================
-2025-12-27 19:15:37 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:15:37 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:15:37 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:15:37 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:22:28 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 19:22:33 - GymManager - INFO - ==================================================
-2025-12-27 19:22:33 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:22:33 - GymManager - INFO - ==================================================
-2025-12-27 19:22:33 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:22:33 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:22:33 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:22:34 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:49:41 - GymManager - INFO - ==================================================
-2025-12-27 19:49:41 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:49:41 - GymManager - INFO - ==================================================
-2025-12-27 19:49:41 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:49:41 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:49:41 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:49:41 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:50:17 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 19:50:43 - GymManager - INFO - ==================================================
-2025-12-27 19:50:43 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:50:43 - GymManager - INFO - ==================================================
-2025-12-27 19:50:43 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:50:43 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:50:43 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:50:43 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 19:52:47 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 19:52:53 - GymManager - INFO - ==================================================
-2025-12-27 19:52:53 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 19:52:53 - GymManager - INFO - ==================================================
-2025-12-27 19:52:53 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 19:52:53 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 19:52:53 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 19:52:54 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 20:12:47 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 20:12:53 - GymManager - INFO - ==================================================
-2025-12-27 20:12:53 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 20:12:53 - GymManager - INFO - ==================================================
-2025-12-27 20:12:53 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 20:12:53 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 20:12:53 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 20:12:53 - GymManager - INFO - Aplicación iniciada correctamente
-2025-12-27 20:19:08 - GymManager - INFO - Aplicación cerrada con código: 0
-2025-12-27 20:19:14 - GymManager - INFO - ==================================================
-2025-12-27 20:19:14 - GymManager - INFO - Iniciando GymManager PRO
-2025-12-27 20:19:14 - GymManager - INFO - ==================================================
-2025-12-27 20:19:14 - GymManager - INFO - Inicializando base de datos...
-2025-12-27 20:19:14 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
-2025-12-27 20:19:14 - GymManager - INFO - Base de datos inicializada correctamente
-2025-12-27 20:19:15 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:28:35 - GymManager - INFO - ==================================================
+2025-12-27 23:28:35 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:28:35 - GymManager - INFO - ==================================================
+2025-12-27 23:28:35 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:28:35 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:28:35 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:28:35 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:28:50 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:29:09 - GymManager - INFO - ==================================================
+2025-12-27 23:29:09 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:29:09 - GymManager - INFO - ==================================================
+2025-12-27 23:29:09 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:29:09 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:29:09 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:29:10 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:34:43 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:36:55 - GymManager - INFO - ==================================================
+2025-12-27 23:36:55 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:36:55 - GymManager - INFO - ==================================================
+2025-12-27 23:36:55 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:36:55 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:36:55 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:36:56 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:39:24 - GymManager - INFO - ==================================================
+2025-12-27 23:39:24 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:39:24 - GymManager - INFO - ==================================================
+2025-12-27 23:39:24 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:39:24 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:39:24 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:39:25 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:49:13 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:49:17 - GymManager - INFO - ==================================================
+2025-12-27 23:49:17 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:49:17 - GymManager - INFO - ==================================================
+2025-12-27 23:49:17 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:49:17 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:49:17 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:49:18 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:49:47 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:50:54 - GymManager - INFO - ==================================================
+2025-12-27 23:50:54 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:50:54 - GymManager - INFO - ==================================================
+2025-12-27 23:50:54 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:50:54 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:50:54 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:50:54 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:51:08 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:52:05 - GymManager - INFO - ==================================================
+2025-12-27 23:52:05 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:52:05 - GymManager - INFO - ==================================================
+2025-12-27 23:52:05 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:52:05 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:52:05 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:52:06 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:54:40 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-27 23:54:42 - GymManager - INFO - ==================================================
+2025-12-27 23:54:42 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:54:42 - GymManager - INFO - ==================================================
+2025-12-27 23:54:42 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:54:42 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:54:42 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:54:43 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-27 23:59:36 - GymManager - INFO - ==================================================
+2025-12-27 23:59:36 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-27 23:59:36 - GymManager - INFO - ==================================================
+2025-12-27 23:59:36 - GymManager - INFO - Inicializando base de datos...
+2025-12-27 23:59:36 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-27 23:59:36 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-27 23:59:37 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-28 00:01:44 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-28 00:01:49 - GymManager - INFO - ==================================================
+2025-12-28 00:01:49 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-28 00:01:49 - GymManager - INFO - ==================================================
+2025-12-28 00:01:49 - GymManager - INFO - Inicializando base de datos...
+2025-12-28 00:01:49 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-28 00:01:49 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-28 00:01:49 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-28 00:02:43 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-28 00:02:50 - GymManager - INFO - ==================================================
+2025-12-28 00:02:50 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-28 00:02:50 - GymManager - INFO - ==================================================
+2025-12-28 00:02:50 - GymManager - INFO - Inicializando base de datos...
+2025-12-28 00:02:50 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-28 00:02:50 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-28 00:02:50 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-28 00:09:48 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-28 00:10:13 - GymManager - INFO - ==================================================
+2025-12-28 00:10:13 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-28 00:10:13 - GymManager - INFO - ==================================================
+2025-12-28 00:10:13 - GymManager - INFO - Inicializando base de datos...
+2025-12-28 00:10:13 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-28 00:10:13 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-28 00:10:13 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-28 00:10:22 - GymManager - INFO - Aplicación cerrada con código: 0
+2025-12-28 00:14:26 - GymManager - INFO - ==================================================
+2025-12-28 00:14:26 - GymManager - INFO - Iniciando GymManager PRO
+2025-12-28 00:14:26 - GymManager - INFO - ==================================================
+2025-12-28 00:14:26 - GymManager - INFO - Inicializando base de datos...
+2025-12-28 00:14:26 - GymManager - INFO - ✅ Base de datos inicializada: 23 tablas + 30 índices + datos iniciales FASE 1 + FASE 2
+2025-12-28 00:14:26 - GymManager - INFO - Base de datos inicializada correctamente
+2025-12-28 00:14:26 - GymManager - INFO - Aplicación iniciada correctamente
+2025-12-28 00:17:17 - GymManager - INFO - Aplicación cerrada con código: 0

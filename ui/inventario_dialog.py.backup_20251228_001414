@@ -83,8 +83,8 @@ class InventarioDialog(QDialog):
         
         # Tabla
         self.table = QTableWidget()
-        self.table.setColumnCount(8)
-        self.table.setHorizontalHeaderLabels(["Producto", "Categoría", "Costo", "Precio", "Stock", "Estado", "Proveedor", "Acciones"])
+        self.table.setColumnCount(7)
+        self.table.setHorizontalHeaderLabels(["Producto", "Categoría", "Costo", "Precio", "Stock", "Estado", "Acciones"])
         self.table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
         self.table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
@@ -126,20 +126,6 @@ class InventarioDialog(QDialog):
             self.table.setItem(r, 4, st)
             self.table.setItem(r, 5, QTableWidgetItem("Activo" if p[10] else "Inactivo"))
             
-            # Columna Proveedor
-            prov_id = p[13] if len(p) > 13 else None
-            prov_nombre = "Sin proveedor"
-            if prov_id:
-                try:
-                    provs = self.prov_service.get_all()
-                    for pv in provs:
-                        if pv[0] == prov_id:
-                            prov_nombre = pv[1]
-                            break
-                except:
-                    pass
-            self.table.setItem(r, 6, QTableWidgetItem(prov_nombre))
-            
             # Botones Acciones
             w = QWidget()
             wl = QHBoxLayout(w)
@@ -155,7 +141,7 @@ class InventarioDialog(QDialog):
             
             wl.addWidget(btn_adj)
             wl.addWidget(btn_hist)
-            self.table.setCellWidget(r, 7, w)
+            self.table.setCellWidget(r, 6, w)
             
             self.table.item(r, 0).setData(Qt.ItemDataRole.UserRole, p)
 
@@ -208,63 +194,15 @@ class InventarioDialog(QDialog):
         
         inp_bar = QLineEdit(p_data[2] if p_data else "")
         
-        # === FORMULARIO ORDENADO LÓGICAMENTE ===
-        
-        # 1. IDENTIFICACIÓN
-        f.addRow("📝 Nombre:", inp_nom)
-        f.addRow("🏷️ Código Barras:", inp_bar)
-        
-        # Separador
-        sep1 = QLabel("─" * 50)
-        sep1.setStyleSheet("color: #475569;")
-        f.addRow("", sep1)
-        
-        # 2. CATEGORIZACIÓN
-        f.addRow("📁 Categoría:", combo_cat)
-        f.addRow("🚚 Proveedor:", combo_prov)
-        
-        # Separador
-        sep2 = QLabel("─" * 50)
-        sep2.setStyleSheet("color: #475569;")
-        f.addRow("", sep2)
-        
-        # 3. PRECIOS (Compra → Venta)
-        f.addRow("💵 Costo Compra:", s_costo)
-        f.addRow("💰 Precio Venta:", s_precio)
-        
-        # Margen de ganancia (calculado automáticamente)
-        lbl_margen = QLabel("---")
-        lbl_margen.setStyleSheet("font-weight: bold; color: #22c55e; font-size: 14px;")
-        f.addRow("📈 Margen:", lbl_margen)
-        
-        def calcular_margen():
-            try:
-                compra = s_costo.value()
-                venta = s_precio.value()
-                if compra > 0:
-                    margen_pct = ((venta - compra) / compra) * 100
-                    margen_sol = venta - compra
-                    color = "#22c55e" if margen_pct >= 0 else "#ef4444"
-                    lbl_margen.setText(f"{margen_pct:.1f}% (S/ {margen_sol:.2f})")
-                    lbl_margen.setStyleSheet(f"font-weight: bold; color: {color}; font-size: 14px;")
-                else:
-                    lbl_margen.setText("---")
-                    lbl_margen.setStyleSheet("font-weight: bold; color: #64748b; font-size: 14px;")
-            except:
-                lbl_margen.setText("Error")
-        
-        s_costo.valueChanged.connect(calcular_margen)
-        s_precio.valueChanged.connect(calcular_margen)
-        calcular_margen()  # Calcular inicial
-        
-        # Separador
-        sep3 = QLabel("─" * 50)
-        sep3.setStyleSheet("color: #475569;")
-        f.addRow("", sep3)
-        
-        # 4. INVENTARIO
-        f.addRow("📦 Stock Inicial:", s_stock)
-        f.addRow("⚠️ Stock Mínimo:", s_min)
+        # Orden Excel
+        f.addRow("Nombre:", inp_nom)
+        f.addRow("Categoría:", combo_cat)
+        f.addRow("Precio Venta:", s_precio)
+        f.addRow("Stock Inicial:", s_stock)
+        f.addRow("Stock Mínimo:", s_min)
+        f.addRow("Cód. Barras:", inp_bar)
+        f.addRow("Costo Compra:", s_costo)
+        f.addRow("Proveedor:", combo_prov)
         
         btn = QPushButton("Guardar")
         btn.clicked.connect(lambda: self._save(dlg, p_data, inp_nom, combo_cat, s_precio, s_stock, s_min, inp_bar, s_costo, combo_prov))

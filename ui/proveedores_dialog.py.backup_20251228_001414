@@ -53,7 +53,7 @@ class ProveedoresDialog(QDialog):
         layout.addWidget(self.table)
         
         # Eliminar
-        btn_del = QPushButton("🗑️ Eliminar Seleccionado")
+        btn_del = QPushButton("🗑️ Desactivar Seleccionado")
         btn_del.setStyleSheet("background-color: #ef4444;")
         btn_del.clicked.connect(self._delete_selected)
         layout.addWidget(btn_del)
@@ -105,12 +105,6 @@ class ProveedoresDialog(QDialog):
         inp_dir = QLineEdit(data[6] if data else "")
         inp_cat = QLineEdit(data[7] if data else "")
         
-        # Checkbox Activo/Inactivo
-        from PyQt6.QtWidgets import QCheckBox
-        chk_activo = QCheckBox("Proveedor Activo")
-        chk_activo.setChecked(data[8] if data and len(data) > 8 else True)
-        chk_activo.setStyleSheet("color: white; font-weight: bold; padding: 5px;")
-        
         form.addRow("Empresa *:", inp_empresa)
         form.addRow("RUC:", inp_ruc)
         form.addRow("Contacto:", inp_contacto)
@@ -118,15 +112,13 @@ class ProveedoresDialog(QDialog):
         form.addRow("Email:", inp_email)
         form.addRow("Dirección:", inp_dir)
         form.addRow("Categoría:", inp_cat)
-        form.addRow("Estado:", chk_activo)
         
         hbox = QHBoxLayout()
         btn_save = QPushButton("Guardar")
         btn_save.clicked.connect(lambda: self._save(dialog, data[0] if data else None, {
             'empresa': inp_empresa.text(), 'ruc': inp_ruc.text(), 
             'contacto': inp_contacto.text(), 'telefono': inp_telefono.text(),
-            'email': inp_email.text(), 'direccion': inp_dir.text(), 
-            'categoria': inp_cat.text(), 'activo': chk_activo.isChecked()
+            'email': inp_email.text(), 'direccion': inp_dir.text(), 'categoria': inp_cat.text()
         }))
         btn_cancel = QPushButton("Cancelar")
         btn_cancel.setStyleSheet("background-color: #64748b;")
@@ -145,51 +137,11 @@ class ProveedoresDialog(QDialog):
         else: QMessageBox.critical(dlg, "Error", res.message)
 
     def _delete_selected(self):
-        """Elimina proveedor con validación"""
         row = self.table.currentRow()
-        if row < 0:
-            QMessageBox.warning(self, "Aviso", "Seleccione un proveedor")
-            return
+        if row < 0: return
+        pid = self.table.item(row, 0).data(Qt.ItemDataRole.UserRole)[0]
         
-        data = self.table.item(row, 0).data(Qt.ItemDataRole.UserRole)
-        pid = data[0]
-        empresa = data[1]
-        
-        # Verificar productos asociados
-        from services.producto_service import ProductoService
-        prod_service = ProductoService()
-        try:
-            productos = prod_service.get_all_productos()
-            productos_asociados = [p for p in productos if len(p) > 13 and p[13] == pid]
-            
-            if productos_asociados:
-                mensaje = (
-                    f"⚠️ ADVERTENCIA\n\n"
-                    f"El proveedor '{empresa}' tiene {len(productos_asociados)} producto(s) asociado(s).\n\n"
-                    f"Si lo elimina, estos productos quedarán sin proveedor.\n\n"
-                    f"¿Continuar?"
-                )
-                
-                respuesta = QMessageBox.warning(
-                    self, "Productos Asociados", mensaje,
-                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
-                    QMessageBox.StandardButton.No
-                )
-                
-                if respuesta != QMessageBox.StandardButton.Yes:
-                    return
-        except:
-            pass  # Si falla la validación, continuar
-        
-        # Confirmación final
-        respuesta = QMessageBox.question(
-            self, "Confirmar Eliminación",
-            f"¿Eliminar '{empresa}'?\n\nEsta acción no se puede deshacer.",
-            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
-            QMessageBox.StandardButton.No
-        )
-        
-        if respuesta == QMessageBox.StandardButton.Yes:
+        if QMessageBox.question(self, "Confirmar", 
+            "¿Desactivar proveedor?") == QMessageBox.StandardButton.Yes:
             self.service.eliminar_proveedor(pid)
-            QMessageBox.information(self, "Éxito", f"Proveedor eliminado")
             self._load_data()

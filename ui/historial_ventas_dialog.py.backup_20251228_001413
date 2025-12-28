@@ -26,17 +26,13 @@ class HistorialVentasDialog(QDialog):
     def _setup_ui(self):
         layout = QVBoxLayout(self)
         
-        # KPIs Mejorados (3 tarjetas con mejor proporción)
+        # KPIs (Guardamos referencias directas a los Labels)
         kpi_layout = QHBoxLayout()
-        kpi_layout.setSpacing(15)
-        
-        self.card_total_frame, self.lbl_total_val = self._create_card("💰 Ventas Periodo", "#22c55e")
-        self.card_count_frame, self.lbl_count_val = self._create_card("📊 Transacciones", "#3b82f6")
-        self.card_ticket_frame, self.lbl_ticket_val = self._create_card("🎯 Ticket Promedio", "#f59e0b")
+        self.card_total_frame, self.lbl_total_val = self._create_card("Ventas Periodo")
+        self.card_count_frame, self.lbl_count_val = self._create_card("Transacciones")
         
         kpi_layout.addWidget(self.card_total_frame)
         kpi_layout.addWidget(self.card_count_frame)
-        kpi_layout.addWidget(self.card_ticket_frame)
         layout.addLayout(kpi_layout)
         
         # Filtros
@@ -72,41 +68,16 @@ class HistorialVentasDialog(QDialog):
         btn_ext.clicked.connect(self._extornar)
         layout.addWidget(btn_ext)
 
-    def _create_card(self, title, color="#22c55e"):
-        """Crea tarjeta KPI mejorada"""
+    def _create_card(self, title):
         frame = QFrame()
-        frame.setStyleSheet("""
-            QFrame {
-                background: #1e293b;
-                border-radius: 8px;
-                border: 2px solid #334155;
-            }
-        """)
-        frame.setMinimumHeight(120)
-        
+        frame.setStyleSheet("background: #1e293b; border-radius: 8px; padding: 15px;")
         l = QVBoxLayout(frame)
-        l.setSpacing(8)
-        l.setContentsMargins(20, 15, 20, 15)
-        
-        # Título
         t = QLabel(title)
-        t.setStyleSheet("color: #94a3b8; font-size: 13px; font-weight: normal;")
-        t.setAlignment(Qt.AlignmentFlag.AlignLeft)
-        
-        # Valor
+        t.setStyleSheet("color: #94a3b8; font-size: 14px;")
         v = QLabel("...")
-        v.setStyleSheet(f"""
-            font-size: 32px;
-            font-weight: bold;
-            color: {color};
-            padding: 5px 0;
-        """)
-        v.setAlignment(Qt.AlignmentFlag.AlignLeft)
-        
+        v.setStyleSheet("font-size: 24px; font-weight: bold; color: #22c55e;")
         l.addWidget(t)
         l.addWidget(v)
-        l.addStretch()
-        
         return frame, v
 
     def _load_data(self):
@@ -133,17 +104,9 @@ class HistorialVentasDialog(QDialog):
             if v[6] == 'completada':
                 tot += v[4]
                 cnt += 1
-        
-        # Actualizar KPIs
+                
         self.lbl_total_val.setText(f"S/ {tot:.2f}")
         self.lbl_count_val.setText(str(cnt))
-        
-        # Calcular ticket promedio
-        if cnt > 0:
-            promedio = tot / cnt
-            self.lbl_ticket_val.setText(f"S/ {promedio:.2f}")
-        else:
-            self.lbl_ticket_val.setText("S/ 0.00")
 
     def _extornar(self):
         row = self.table.currentRow()

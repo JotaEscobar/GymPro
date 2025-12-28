@@ -255,39 +255,38 @@ def create_initial_tables():
             )
         """)
         
-        # 3. Tabla Productos (Con columnas nuevas preparadas para nuevas instalaciones)
+        # 3. Tabla Productos - ORDEN LÓGICO MEJORADO
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS productos (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                
+                -- IDENTIFICACIÓN
                 sku TEXT NOT NULL UNIQUE,
                 codigo_barras TEXT UNIQUE,
                 nombre TEXT NOT NULL,
+                
+                -- CATEGORIZACIÓN
                 categoria_id INTEGER NOT NULL,
                 proveedor_id INTEGER,
-                precio_compra REAL DEFAULT 0,
-                precio_base REAL NOT NULL CHECK(precio_base >= 0),
+                
+                -- PRECIOS (orden lógico: compra → venta)
+                precio_compra REAL DEFAULT 0 CHECK(precio_compra >= 0),
+                precio_venta REAL NOT NULL CHECK(precio_venta >= 0),
+                
+                -- INVENTARIO
                 stock_actual INTEGER NOT NULL DEFAULT 0 CHECK(stock_actual >= 0),
-                stock_minimo INTEGER NOT NULL DEFAULT 0,
+                stock_minimo INTEGER NOT NULL DEFAULT 0 CHECK(stock_minimo >= 0),
+                
+                -- METADATOS
                 foto_path TEXT,
                 activo BOOLEAN DEFAULT 1,
                 fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+                fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+                
                 FOREIGN KEY(categoria_id) REFERENCES categorias_producto(id),
-                FOREIGN KEY(proveedor_id) REFERENCES proveedores(id)
+                FOREIGN KEY(proveedor_id) REFERENCES proveedores(id) ON DELETE SET NULL
             )
         """)
-
-        # MIGRACIÓN AUTOMÁTICA: Agregar columnas nuevas a productos si ya existe la tabla
-        try:
-            cursor.execute("ALTER TABLE productos ADD COLUMN proveedor_id INTEGER REFERENCES proveedores(id)")
-            logger.info("Migración: Columna proveedor_id agregada a productos")
-        except sqlite3.OperationalError:
-            pass # Ya existe o error irrelevante
-
-        try:
-            cursor.execute("ALTER TABLE productos ADD COLUMN precio_compra REAL DEFAULT 0")
-            logger.info("Migración: Columna precio_compra agregada a productos")
-        except sqlite3.OperationalError:
-            pass # Ya existe o error irrelevante
         
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS inventario_movimientos (
